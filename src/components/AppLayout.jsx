@@ -10,6 +10,7 @@ import NavLinks from "./NavLinks";
 
 export default function AppLayout() {
   const [toggle, setIsToggle] = useState(false);
+  console.log(toggle);
   return (
     <div className="w-full">
       <header className="flex justify-between w-full shadow px-6 py-3">
@@ -39,14 +40,14 @@ export default function AppLayout() {
           </div>
           <input
             id="table-search"
-            className="block w-80 pl-10 pr-3 py-2 border-[1.5px]  border-gray-200 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
+            className="block w-80 pl-10 pr-3 py-2 border-[1.5px]  border-gray-200 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
             placeholder="Search"
             type="search"
             name="search"
           />
         </div>
 
-        <div className="hidden md:block space-x-2">
+        <div className="hidden lg:block space-x-2">
           <button className="p-2 rounded-full bg-gray-200">
             <BiMessageRoundedDots className="text-lg text-gray-700" />
           </button>
@@ -55,7 +56,7 @@ export default function AppLayout() {
           </button>
         </div>
         <div
-          className="text-4xl md:hidden"
+          className="text-4xl lg:hidden"
           onClick={() => setIsToggle((prev) => !prev)}
         >
           <IoMenu />
@@ -84,7 +85,7 @@ export default function AppLayout() {
         {
           // Mobile View
           toggle && (
-            <div className="md:hidden absolute inset-0  flex-col justify-between font-inter px-4 text-white/85 py-2 bg-[#1f2740]">
+            <div className="lg:hidden absolute inset-0  flex-col justify-between font-inter px-4 text-white/85 py-2 bg-[#1f2740]">
               <div className="flex justify-between">
                 <div className="flex flex-col">
                   <p>Payments</p>
@@ -96,10 +97,10 @@ export default function AppLayout() {
                   </div>
                 </div>
                 <div onClick={() => setIsToggle((prev) => !prev)}>
-                  <IoMenu className="text-4xl md:hidden" />
+                  <IoMenu className="text-4xl lg:hidden" />
                 </div>
               </div>
-              <NavLinks toggle={toggle} />
+              <NavLinks isOpen={toggle} />
             </div>
           )
         }

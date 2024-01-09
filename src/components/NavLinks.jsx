@@ -13,6 +13,7 @@ import { AiOutlineNotification } from "react-icons/ai";
 
 // eslint-disable-next-line react/prop-types
 export default function NavLinks({ isOpen }) {
+  console.log(isOpen);
   return (
     <>
       <li
@@ -21,7 +22,7 @@ export default function NavLinks({ isOpen }) {
         }`}
       >
         <GrHomeRounded className={isOpen ? "h-8" : "h-8"} />
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Home
         </a>
       </li>
@@ -33,7 +34,7 @@ export default function NavLinks({ isOpen }) {
       >
         <LuClipboardList className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Orders
         </a>
       </li>
@@ -44,7 +45,7 @@ export default function NavLinks({ isOpen }) {
       >
         <IoGridOutline className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Products
         </a>
       </li>
@@ -55,7 +56,7 @@ export default function NavLinks({ isOpen }) {
       >
         <BsTruck className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Delivery
         </a>
       </li>
@@ -65,7 +66,7 @@ export default function NavLinks({ isOpen }) {
         }`}
       >
         <AiOutlineNotification className={isOpen ? "h-8" : "h-8"} />
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Marketing
         </a>
       </li>
@@ -75,7 +76,7 @@ export default function NavLinks({ isOpen }) {
         }`}
       >
         <TbDeviceAnalytics className={isOpen ? "h-8" : "h-8"} />
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Analytics
         </a>
       </li>
@@ -86,7 +87,7 @@ export default function NavLinks({ isOpen }) {
       >
         <MdOutlinePayments className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Payment
         </a>
       </li>
@@ -97,7 +98,7 @@ export default function NavLinks({ isOpen }) {
       >
         <SlCursor className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Tools
         </a>
       </li>
@@ -108,7 +109,7 @@ export default function NavLinks({ isOpen }) {
       >
         <TbDiscount2 className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Discounts
         </a>
       </li>
@@ -119,7 +120,7 @@ export default function NavLinks({ isOpen }) {
       >
         <BsPeople className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Audience
         </a>
       </li>
@@ -130,7 +131,7 @@ export default function NavLinks({ isOpen }) {
       >
         <IoColorPaletteOutline className={isOpen ? "h-8" : "h-8"} />
 
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Appearance
         </a>
       </li>
@@ -140,7 +141,7 @@ export default function NavLinks({ isOpen }) {
         }`}
       >
         <ImPower className={isOpen ? "h-8" : "h-8"} />
-        <a href="" className={!isOpen ? "hidden" : "block"}>
+        <a href="" className={isOpen ? "block" : "hidden"}>
           Plugins
         </a>
       </li>
