@@ -13,7 +13,6 @@ import { AiOutlineNotification } from "react-icons/ai";
 
 // eslint-disable-next-line react/prop-types
 export default function NavLinks({ isOpen }) {
-  console.log(isOpen);
   return (
     <>
       <li

@@ -5,7 +5,7 @@ import AppLayout from "./AppLayout";
 export default function MainLayout() {
   return (
     <div className="flex">
-      <div className="max-h-screen overflow-y-auto items-stretch">
+      <div className="max-h-screen  overflow-y-auto">
         <SideBar />
       </div>
       <main className="max-h-screen flex-1 overflow-y-auto">

@@ -1,6 +1,8 @@
 import { LuDownload } from "react-icons/lu";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import { FaCaretDown } from "react-icons/fa";
+import { BsQuestionCircle } from "react-icons/bs";
 
 export default function Table() {
   return (
@@ -30,9 +32,7 @@ export default function Table() {
           <input
             id="table-search"
             className="block w-full pl-10 pr-3 py-2 border-[1.5px]  border-gray-200 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
-            placeholder="Search"
-            type="search"
-            name="search"
+            placeholder="Search by order ID"
           />
         </div>
 
@@ -48,23 +48,26 @@ export default function Table() {
 
       <div className="relative overflow-x-auto">
         <table className="w-full text-sm text-left text-gray-500">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-100 ">
+          <thead className="text-[10px] sm:text-xs text-gray-700 bg-gray-100 ">
             <tr>
               <th scope="col" className="px-6 py-3">
                 Order ID
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="sm:px-6 sm:py-3 hidden sm:block">
                 Order Date
+                <FaCaretDown className="inline ml-1" />
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="sm:px-6 px-3 py-3">
                 Order Amount
               </th>
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="">
                 Transaction fees
+                <BsQuestionCircle className="hidden sm:inline ml-2 font-normal text-sm text-gray-500" />
               </th>
             </tr>
           </thead>
-          <tbody className="relative overflow-y-auto">
+
+          <tbody className="relative text-left overflow-y-auto">
             <tr className="bg-white border-b gray-800 gray-700">
               <th
                 scope="row"
@@ -72,7 +75,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -83,7 +86,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -94,7 +97,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -105,7 +108,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -116,7 +119,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -127,7 +130,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -138,7 +141,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -149,7 +152,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -160,7 +163,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -171,7 +174,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -182,7 +185,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -193,7 +196,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -204,7 +207,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -215,7 +218,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -226,7 +229,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -237,7 +240,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -248,7 +251,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -259,7 +262,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -270,7 +273,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -281,7 +284,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>
@@ -292,7 +295,7 @@ export default function Table() {
               >
                 #201209
               </th>
-              <td className="px-6 py-4">7 July, 2023</td>
+              <td className="px-6 py-4 hidden sm:block">7 July, 2023</td>
               <td className="px-6 py-4">₹1,278.23</td>
               <td className="px-6 py-4">₹22</td>
             </tr>

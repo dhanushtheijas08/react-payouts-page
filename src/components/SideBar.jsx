@@ -7,15 +7,15 @@ import { CiWallet } from "react-icons/ci";
 import NavLinks from "./NavLinks";
 
 export default function SideBar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleSidebar = () => {
     setIsOpen((prev) => !prev);
   };
 
   return (
-    <div className="relative hidden lg:block">
-      <aside className="side-bar  flex-col justify-between font-inter px-4 text-white/85 py-2 bg-[#1f2740]">
-        <nav className="transition-all duration-700">
+    <div className="relative hidden lg:flex flex-col h-full bg-[#1f2740]">
+      <aside className="flex-col justify-between font-inter px-4 text-white/85 py-2 bg-[#1f2740]">
+        <nav className="relative overflow-y-auto">
           <ul className="flex flex-col text-lg">
             <li className="mb-5 flex  items-center justify-between">
               <img src={Logo} alt="logo" className="h-11" />
@@ -35,8 +35,8 @@ export default function SideBar() {
           </ul>
         </nav>
 
-        <div className="hover:bg-[#343a52] cursor-pointer gap-3 flex items-center justify-between rounded px-4 py-2 ">
-          <CiWallet className="h-8 font-bold" />
+        <div className="hover:bg-[#343a52] absolute w-full bottom-0 left-0 cursor-pointer gap-3 flex items-center rounded px-4 py-2 ">
+          <CiWallet className="h-8 w-6 font-bold" />
           <div className={!isOpen ? "hidden" : "flex flex-col"}>
             <p className="text-white/65 text-xs">Available Credits</p>
             <p>222.10</p>

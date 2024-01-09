@@ -10,7 +10,6 @@ import NavLinks from "./NavLinks";
 
 export default function AppLayout() {
   const [toggle, setIsToggle] = useState(false);
-  console.log(toggle);
   return (
     <div className="w-full">
       <header className="flex justify-between w-full shadow px-6 py-3">
@@ -21,7 +20,7 @@ export default function AppLayout() {
         </div>
 
         <div className="hidden relative md:flex items-center">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <div className="absolute bg-gray-200/65 inset-y-0 left-0 pl-3 flex items-center pointer-events-none rounded-lg">
             <svg
               className="w-4 h-4 text-gray-500 "
               aria-hidden="true"
@@ -40,11 +39,10 @@ export default function AppLayout() {
           </div>
           <input
             id="table-search"
-            className="block w-80 pl-10 pr-3 py-2 border-[1.5px]  border-gray-200 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-gray-500 focus:border-gray-500 sm:text-sm"
-            placeholder="Search"
-            type="search"
-            name="search"
+            className="block w-80 pl-10 bg-gray-200 rounded-lg pr-3 py-2 border-none outline-none  sm:text-sm"
+            placeholder="Search features, tutorials, etc."
           />
+          {/* border-gray-200  leading-5  placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-gray-500 focus:border-gray-500  */}
         </div>
 
         <div className="hidden lg:block space-x-2">
